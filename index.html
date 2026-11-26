@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZEN STUDIOS — A temple for sound</title>
+<meta name="description" content="ZEN STUDIOS — a production, recording and creative space in Austin. A COSMOTION project. Pitch deck for partners and investors.">
+<meta property="og:title" content="ZEN STUDIOS — A temple for sound">
+<meta property="og:description" content="A production, recording and creative space in Austin. A COSMOTION project.">
+<meta property="og:image" content="/img/zen-desk.jpg">
+<meta name="theme-color" content="#12100C">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12100C;--ink2:#1C1813;--panel:#221D17;--bone:#F2ECE1;--gold:#C8A46B;--gold-d:#8A6A36;--soft:#CFC5B4;--soft-l:#4A4237;--line:#3A3229}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-snap-type:y mandatory;scroll-behavior:smooth;background:var(--ink)}
+body{font-family:'DM Sans',Arial,sans-serif;color:var(--bone);-webkit-font-smoothing:antialiased;font-weight:300}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;line-height:1.05}
+section{min-height:100vh;min-height:100svh;scroll-snap-align:start;position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(28px,7vw,128px);overflow:hidden;background:var(--ink)}
+.warm{background:var(--ink2)} .light{background:var(--bone);color:#1A1610} .gold{background:var(--gold);color:#1A1610}
+h1{font-size:clamp(56px,9vw,160px);letter-spacing:.08em;font-weight:400}
+h2{font-size:clamp(38px,4.6vw,80px);max-width:1400px}
+h3{font-size:clamp(26px,2.4vw,40px);font-weight:600;margin-bottom:12px}
+p{font-size:clamp(16px,1.45vw,26px);line-height:1.5;color:var(--soft)}
+.light p{color:var(--soft-l)} .gold p{color:#2A2218}
+.eyebrow{font-size:clamp(12px,1.1vw,18px);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:28px}
+.light .eyebrow{color:var(--gold-d)} .gold .eyebrow{color:#2A2218}
+.statement{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(40px,5.4vw,96px);line-height:1.1;color:var(--bone);max-width:1500px;font-weight:400}
+.statement i{color:var(--gold)}
+.rule{width:96px;height:2px;background:var(--gold);margin:44px 0}
+.lede{font-size:clamp(18px,1.9vw,34px);max-width:1200px}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.scrim{position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,12,9,.93) 0%,rgba(14,12,9,.6) 45%,rgba(14,12,9,.12) 100%);z-index:1}
+.scrim-b{position:absolute;inset:0;background:linear-gradient(0deg,rgba(14,12,9,.96) 0%,rgba(14,12,9,.55) 45%,rgba(14,12,9,.05) 80%);z-index:1}
+.over{position:relative;z-index:2}
+.cover{justify-content:flex-end}
+.cover .sub{font-size:clamp(18px,2vw,34px);color:#E6DCC8;margin-top:20px;max-width:900px}
+.meta{position:absolute;right:clamp(28px,7vw,128px);top:clamp(28px,5vw,64px);z-index:2;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:#BFB39E}
+.grid{display:grid;gap:clamp(24px,3vw,48px);margin-top:clamp(32px,4vw,64px)}
+.g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
+.card{border-top:2px solid var(--gold);padding-top:24px}
+.light .card{border-top-color:var(--gold-d)}
+.split{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(32px,5vw,80px);align-items:center}
+.split img{width:100%;height:min(76vh,824px);object-fit:cover;border-radius:4px}
+.feat{display:flex;flex-direction:column;gap:22px;margin-top:36px}
+.feat p{border-left:2px solid var(--gold);padding-left:22px}
+.feat b{color:var(--bone);font-weight:500}
+.pills{display:flex;flex-wrap:wrap;gap:16px;margin-top:40px}
+.pill{font-size:clamp(14px,1.3vw,22px);padding:12px 24px;border:1px solid #5A4E3C;border-radius:40px;color:#E6DCC8}
+.phase{background:var(--panel);padding:clamp(24px,2.6vw,44px);border-radius:4px}
+.phase .num{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(44px,4vw,72px);color:var(--gold);line-height:1;margin-bottom:16px}
+.phase p{margin-top:12px}
+.ask{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,4vw,64px);margin-top:48px}
+.big{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(64px,7vw,120px);line-height:1;color:#1A1610}
+.list p{padding:16px 0;border-bottom:1px solid rgba(26,22,16,.25)}
+.list b{color:#1A1610;font-weight:500}
+.contact{display:flex;flex-wrap:wrap;gap:16px 56px;margin-top:44px}
+.contact a{color:var(--gold);text-decoration:none;font-size:clamp(16px,1.6vw,28px);letter-spacing:.04em}
+.contact a:hover{color:var(--bone)}
+.cta{display:inline-block;margin-top:40px;padding:16px 32px;border:1px solid #1A1610;color:#1A1610;text-decoration:none;letter-spacing:.2em;text-transform:uppercase;font-size:14px;font-weight:500}
+.cta:hover{background:#1A1610;color:var(--gold)}
+.note{position:absolute;right:clamp(28px,7vw,128px);top:clamp(28px,4vw,56px);font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:#8C806C;z-index:2}
+/* reveal */
+.r{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.in .r{opacity:1;transform:none}
+.in .r.d1{transition-delay:.15s}.in .r.d2{transition-delay:.3s}.in .r.d3{transition-delay:.45s}.in .r.d4{transition-delay:.6s}.in .r.d5{transition-delay:.75s}
+@media (prefers-reduced-motion:reduce){.r{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+/* nav */
+.dots{position:fixed;right:22px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:12px;z-index:10}
+.dots a{width:8px;height:8px;border-radius:50%;background:rgba(200,164,107,.3);display:block;transition:.3s}
+.dots a.on{background:var(--gold);transform:scale(1.4)}
+.bar{position:fixed;left:0;right:0;bottom:0;display:flex;justify-content:space-between;align-items:center;padding:14px 22px;z-index:10;pointer-events:none}
+.bar>*{pointer-events:auto}
+.brand{font-family:'Cormorant Garamond',serif;letter-spacing:.3em;font-size:14px;color:var(--gold);mix-blend-mode:difference}
+.ctrl{display:flex;gap:8px;align-items:center}
+.ctrl button{background:rgba(18,16,12,.7);border:1px solid var(--line);color:var(--bone);font:500 12px 'DM Sans',sans-serif;letter-spacing:.15em;text-transform:uppercase;padding:9px 14px;border-radius:30px;cursor:pointer;backdrop-filter:blur(6px)}
+.ctrl button:hover{border-color:var(--gold);color:var(--gold)}
+.count{font-size:12px;letter-spacing:.15em;color:#9C907C;margin-right:6px}
+@media (max-width:900px){
+  .g3,.g2,.split,.ask{grid-template-columns:1fr}
+  .split img{height:46vh}
+  section{justify-content:flex-start;padding-top:72px;padding-bottom:88px}
+  .cover{justify-content:flex-end}
+  .dots,.brand,.count,#present{display:none}
+  .bar{justify-content:flex-end}
+  html{scroll-snap-type:none}
+}
+</style>
+</head>
+<body>
+
+<section id="s1" class="cover">
+  <img class="bg" src="/img/zen-desk.jpg" alt="ZEN STUDIOS concept render: a warm production desk with synths, lanterns, a bonsai and a Buddha shrine">
+  <div class="scrim"></div>
+  <p class="meta">Partner &amp; investor deck · 2026</p>
+  <div class="over">
+    <p class="eyebrow r">A COSMOTION project · Austin</p>
+    <h1 class="r d1">ZEN STUDIOS</h1>
+    <p class="sub r d2">A temple for sound. A home for the music that moves people.</p>
+  </div>
+</section>
+
+<section id="s2" class="warm">
+  <p class="eyebrow r">The vision</p>
+  <p class="statement r d1">A studio where the gear is world-class and the room feels like <i>a meditation.</i></p>
+  <div class="rule r d2"></div>
+  <p class="lede r d3">ZEN STUDIOS is a production, recording and creative space in Austin — built for deep, emotive electronic music and the artists, healers and creators around it.</p>
+</section>
+
+<section id="s3">
+  <p class="eyebrow r">Why it needs to exist</p>
+  <h2 class="r d1">Most studios are built for output. Few are built for flow.</h2>
+  <div class="grid g3">
+    <div class="card r d2"><h3>Rooms without soul</h3><p>Commercial studios are booked by the hour, lit like offices and designed around throughput — not the state artists create from.</p></div>
+    <div class="card r d3"><h3>Bedrooms without gear</h3><p>Independent producers make records on laptops, missing the synths, monitoring and acoustics that finish a track properly.</p></div>
+    <div class="card r d4"><h3>Scenes without a home</h3><p>Austin’s melodic and organic house community has dance floors, but no shared creative base to write, record and film together.</p></div>
+  </div>
+</section>
+
+<section id="s4" class="warm">
+  <div class="split">
+    <div>
+      <p class="eyebrow r">The space</p>
+      <h2 class="r d1">Built like a temple. Tuned like a studio.</h2>
+      <div class="feat">
+        <p class="r d2"><b>Control room</b> — full-range monitoring, a curated wall of analog synths and drum machines, treated end to end.</p>
+        <p class="r d3"><b>Live room</b> — percussion, guitars, keys and vocals, ready to capture organic textures.</p>
+        <p class="r d4"><b>Lounge &amp; altar</b> — candlelight, plants, stone and wood: a room you want to stay in.</p>
+      </div>
+    </div>
+    <img class="r d2" src="/img/control-room.jpg" alt="ZEN STUDIOS concept render: large control room with tall monitors, rows of synthesizers, guitars, drums and a Persian rug" loading="lazy">
+  </div>
+  <p class="note">Concept renders</p>
+</section>
+
+<section id="s5" class="light">
+  <p class="eyebrow r">What happens inside</p>
+  <h2 class="r d1">Six ways the room comes alive</h2>
+  <div class="grid g3">
+    <div class="card r d1"><h3>Production &amp; mixing</h3><p>Writing, finishing and mixing sessions for ZENTI and visiting artists.</p></div>
+    <div class="card r d2"><h3>Artist residencies</h3><p>Week-long creative retreats for touring and local producers.</p></div>
+    <div class="card r d3"><h3>Filmed sessions</h3><p>Live sets and studio stories, shot in-house for every platform.</p></div>
+    <div class="card r d2"><h3>Sound journeys</h3><p>Intimate sound-healing and listening experiences for small groups.</p></div>
+    <div class="card r d3"><h3>Workshops</h3><p>Production, sound design and DJ masterclasses.</p></div>
+    <div class="card r d4"><h3>ZEN plugin R&amp;D</h3><p>Home base for ZEN SPACE, ZEN TUNE and ZEN PULSE for Ableton.</p></div>
+  </div>
+</section>
+
+<section id="s6">
+  <p class="eyebrow r">The ecosystem</p>
+  <h2 class="r d1">ZEN STUDIOS is the engine room of COSMOTION</h2>
+  <div class="grid g2">
+    <div class="card r d2"><h3>ZENTI</h3><p>Deep, melodic house project. The studio’s first resident and its sound.</p></div>
+    <div class="card r d3"><h3>COSMOTION MUSIC</h3><p>Independent label — first release CM001 “Boomin’ Now” out January 2026. Records get made here.</p></div>
+    <div class="card r d3"><h3>COSMOTION Experiences</h3><p>Events and immersive productions — rehearsal, prep and content start in the studio.</p></div>
+    <div class="card r d4"><h3>ZEN plugins &amp; Cosmotion Agency</h3><p>Ableton tools built in-house, and artist development for the people who come through the doors.</p></div>
+  </div>
+</section>
+
+<section id="s7" class="warm">
+  <p class="eyebrow r">Track record</p>
+  <h2 class="r d1">Built by someone who has done it before</h2>
+  <div class="grid g3">
+    <div class="card r d2"><h3>Stages</h3><p>ZENTI has played Burning Man, Envision, Lightning in a Bottle and Texas Eclipse — alongside Lee Burridge, Bedouin, Monolink and WhoMadeWho.</p></div>
+    <div class="card r d3"><h3>Labels</h3><p>Releases on Lump, Kosa, Still Play, A Magic Sun and Cafe De Anatolia — and now COSMOTION MUSIC.</p></div>
+    <div class="card r d4"><h3>Spaces</h3><p>Built and launched Austin venues Stardust Garage and NOWHERE. A decade of COSMOTION productions since 2015.</p></div>
+  </div>
+  <div class="pills r d5">
+    <span class="pill">Film producer turned creative director</span>
+    <span class="pill">Underground roots: New York · Miami · Austin</span>
+  </div>
+</section>
+
+<section id="s8" class="light">
+  <p class="eyebrow r">Business model</p>
+  <h2 class="r d1">Many small rivers into one lake</h2>
+  <div class="grid g3">
+    <div class="card r d1"><h3>Studio time</h3><p>Day and block bookings for producers and bands. [$__ / day]</p></div>
+    <div class="card r d2"><h3>Memberships</h3><p>Monthly access for a small circle of resident artists. [$__ / month]</p></div>
+    <div class="card r d3"><h3>Residencies &amp; retreats</h3><p>Curated weeks for visiting artists. [$__ / residency]</p></div>
+    <div class="card r d2"><h3>Content &amp; brand sessions</h3><p>Filmed sets, sponsored series and gear-partner features.</p></div>
+    <div class="card r d3"><h3>Experiences</h3><p>Sound journeys, listening nights and workshops. [$__ / ticket]</p></div>
+    <div class="card r d4"><h3>Owned IP</h3><p>Label releases, publishing and ZEN plugin sales.</p></div>
+  </div>
+</section>
+
+<section id="s9">
+  <p class="eyebrow r">The build</p>
+  <h2 class="r d1">Three phases, each one earning</h2>
+  <div class="grid g3">
+    <div class="phase r d2"><p class="num">I</p><h3>The control room</h3><p>Secure the space, acoustic treatment, monitoring and core synth wall. Open for production and mixing. [Target: Q_ 20__]</p></div>
+    <div class="phase r d3"><p class="num">II</p><h3>Live room &amp; camera</h3><p>Add the tracking room and a permanent film setup. Launch filmed sessions and workshops. [Target: Q_ 20__]</p></div>
+    <div class="phase r d4"><p class="num">III</p><h3>Residency &amp; community</h3><p>Lounge, altar and residency program. Memberships and sound journeys go live. [Target: Q_ 20__]</p></div>
+  </div>
+</section>
+
+<section id="s10" class="gold">
+  <p class="eyebrow r">The ask</p>
+  <h2 class="r d1">Come build the temple with us</h2>
+  <div class="ask">
+    <div class="r d2">
+      <p class="big">[$___K]</p>
+      <p style="margin-top:18px">to open Phase I and fund the first year of operations.</p>
+      <a class="cta" href="mailto:thomaszente@gmail.com?subject=ZEN%20STUDIOS">Start the conversation</a>
+    </div>
+    <div class="list r d3">
+      <p><b>Investors</b> — equity or revenue share [terms]</p>
+      <p><b>Gear &amp; audio brands</b> — instruments, monitoring, sponsorship</p>
+      <p><b>Property partners</b> — the right building in Austin</p>
+      <p><b>Creative partners</b> — artists, healers, filmmakers</p>
+    </div>
+  </div>
+</section>
+
+<section id="s11" class="cover">
+  <img class="bg" src="/img/control-room.jpg" alt="ZEN STUDIOS concept render: the full control room glowing in warm candlelight" loading="lazy">
+  <div class="scrim-b"></div>
+  <div class="over">
+    <p class="eyebrow r">The intention</p>
+    <p class="statement r d1">ZEN STUDIOS already exists. <i>Now we build it into the world.</i></p>
+    <div class="contact r d3">
+      <a href="mailto:thomaszente@gmail.com">thomaszente@gmail.com</a>
+      <a href="https://instagram.com/zentimusic" target="_blank" rel="noopener">@zentimusic</a>
+      <a href="https://cosmotion.vercel.app" target="_blank" rel="noopener">COSMOTION</a>
+    </div>
+  </div>
+</section>
+
+<nav class="dots" aria-label="Slides"></nav>
+<div class="bar">
+  <span class="brand">ZEN STUDIOS</span>
+  <div class="ctrl"><span class="count" id="count">01 / 11</span><button id="prev" aria-label="Previous">↑</button><button id="next" aria-label="Next">↓</button><button id="present">Present</button></div>
+</div>
+
+<script>
+const S=[...document.querySelectorAll('section')],dots=document.querySelector('.dots'),count=document.getElementById('count');
+S.forEach((s,i)=>{const a=document.createElement('a');a.href='#'+s.id;a.setAttribute('aria-label','Slide '+(i+1));dots.appendChild(a)});
+const D=[...dots.children];let cur=0;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');if(e.intersectionRatio>.5){cur=S.indexOf(e.target);D.forEach((d,j)=>d.classList.toggle('on',j===cur));count.textContent=String(cur+1).padStart(2,'0')+' / '+S.length}}}),{threshold:[.2,.55]});
+S.forEach(s=>io.observe(s));
+const go=i=>{i=Math.max(0,Math.min(S.length-1,i));S[i].scrollIntoView({behavior:'smooth'})};
+document.getElementById('prev').onclick=()=>go(cur-1);
+document.getElementById('next').onclick=()=>go(cur+1);
+document.getElementById('present').onclick=()=>{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()};
+addEventListener('keydown',e=>{if(['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(cur+1)}else if(['ArrowUp','ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(cur-1)}else if(e.key==='Home'){go(0)}else if(e.key==='End'){go(S.length-1)}else if(e.key==='f'){document.getElementById('present').click()}});
+</script>
+</body>
+</html>
